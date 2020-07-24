@@ -21,6 +21,7 @@ body {
     text-align: center;
 
     &__body {
+        font-size: 0;
         padding: 1.25rem;
     }
 
@@ -33,6 +34,11 @@ body {
 .countdown {
     &__section {
         display: inline-block;
+        margin-left: 4px;
+
+        &:first-child {
+            margin-left: 0;
+        }
 
         > .value {
             background-color: #333;
